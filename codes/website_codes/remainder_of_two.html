@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Getting the Remainder of Two Numbers</h1>
+
+    <label for="">Enter number 1: </label>
+    <input type="numbers" id="n1"><br>
+    
+    <label for="">Enter number 2: </label>
+    <input type="numbers" id="n2"><br>
+
+    <button onclick="remain()"> remainder</button><br>
+
+    <h1 id="res"></h1>
+
+    <script>
+        function remain(){
+            let n1 = Number(document.getElementById("n1").value);
+            let n2 = Number(document.getElementById("n2").value);
+
+            let n3 = n1 % n2;
+
+            document.getElementById("res").innerHTML = "The remainder of two numbers is: " + n3;
+
+
+        }
+    </script>
+</body>
+</html>

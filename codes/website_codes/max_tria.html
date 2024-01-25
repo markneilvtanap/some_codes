@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>max triangle side</h1>
+
+    <label for="">Enter side 1: </label>
+    <input type="numbers" id="s1"><br>
+    <label for="">Enter side 2: </label>
+    <input type="numbers" id="s2"><br>
+    <button onclick="maxtria()">Max</button>
+
+    <h1 id="res"></h1>
+    <script>
+
+        function maxtria() {
+            let s1 = Number(document.getElementById("s1").value);
+            let s2 = Number(document.getElementById("s2").value);
+
+            let s3 = (s1 + s2) - 1;
+
+            document.getElementById("res").innerHTML = "The max side of triangle is: " + s3;
+        }
+
+    </script>
+</body>
+</html>

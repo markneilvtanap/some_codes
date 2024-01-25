@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Perimeter of Rectangle</h1>
+
+    <label for="">Enter the Length: </label>
+    <input type="numbers" id="length"><br>
+    <label for="">Enter the Width: </label>
+    <input type="numbers" id="width"><br>
+    <button onclick="peri()">Perimeter</button><br>
+
+    <h1 id="res"></h1>
+
+
+    <script>
+        function peri(){
+            let length = Number(document.getElementById("length").value);
+            let width = Number(document.getElementById("width").value);
+
+            let perimeter = 2 * (length + width);
+
+            document.getElementById("res").innerHTML = "The Perimeter of Rectangle is " + perimeter;
+        }
+
+    </script>
+</body>
+</html>

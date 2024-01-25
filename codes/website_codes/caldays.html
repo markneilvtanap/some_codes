@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Converting year into days</h1>
+
+    <!-- getting input to user -->
+    <label for=""> Enter your age: </label>
+    <input type="numbers" id="age">
+    <button onclick="calAge()">convert</button>
+
+    <h1 id="res"></h1>
+
+    <script>
+        function calAge(){
+            let age = Number(document.getElementById("age").value);
+
+
+            //checking if input is positive 
+            if (age <= 0){
+                // if negative input show an error message
+                window.alert("Invalid Input must be a positive numbers");
+              
+            }
+            else{
+            
+            // displaying the result
+            let days = age * 365;
+            document.getElementById("res").innerHTML = "The days is: " + days;
+            }
+
+
+        }
+    </script>
+</body>
+</html>

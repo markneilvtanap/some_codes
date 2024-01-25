@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <H1>adding two numbers </H1>
+
+<!-- getting numbers to add -->
+    <label for="">Num1: </label>
+    <input type="numbers" id="num1"><br>
+     <label for="">Num2: </label>
+    <input type="numbers" id="num2"><br>
+    <!-- button to add and sent to function -->
+    <button type="button" onclick="add()">add</button><br>
+
+    <h1 id="total"></h1>
+
+
+
+    <script>
+        // a function for adding 
+        function add(){
+            let num1, num2;
+            // storing the value
+            num1 = Number(document.getElementById("num1").value);
+            num2 = Number(document.getElementById("num2").value);
+
+            // storing to result variable
+            let result = num1 + num2;
+
+            // showint the total
+
+            document.getElementById("total").innerHTML = "The total is " + result;
+
+
+
+        }
+    </script>
+</body>
+</html>
